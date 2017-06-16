@@ -1,5 +1,6 @@
 
 import java.util.HashMap;
+import java.util.Map;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -14,7 +15,7 @@ import java.util.HashMap;
 public class checkUniqueChar {
     
     public static void main(String[] args) {
-        boolean test = checkUnique("");
+        boolean test = checkUnique("abcdefg");
         System.out.println(test);
     }
     
@@ -32,6 +33,14 @@ public class checkUniqueChar {
                 return false;
             }
         }
+        
+        //if passed
+        
+        for(Map.Entry<Character, Integer> entry: map.entrySet()) {
+            System.out.println(entry.getKey() + "  " + entry.getValue());
+        }
+        
+        
         return true;
     }
     
