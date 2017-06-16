@@ -15,7 +15,7 @@ import java.util.Map;
 public class checkUniqueChar {
     
     public static void main(String[] args) {
-        boolean test = checkUnique("abcdefg");
+        boolean test = checkUnique2("abcdeafg");
         System.out.println(test);
     }
     
@@ -34,13 +34,26 @@ public class checkUniqueChar {
             }
         }
         
-        //if passed
-        
+        //if passed        
         for(Map.Entry<Character, Integer> entry: map.entrySet()) {
             System.out.println(entry.getKey() + "  " + entry.getValue());
         }
         
         
+        return true;
+    }
+    
+    public static boolean checkUnique2(String str) {
+        if (str.length() > 256) return false;
+        
+        boolean[] char_set = new boolean[256];
+        for(int i = 0; i < str.length(); i++) {
+            if(char_set[(int)str.charAt(i)] == false) {
+                char_set[str.charAt(i)] = true;
+            } else {
+                return false;
+            }
+        }
         return true;
     }
     
