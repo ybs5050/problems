@@ -4,3 +4,12 @@ build.xml
 manifest.mf
 /checkStringUniqueChars/build/
 /checkStringUniqueChars/dist/
+*.properties
+*.class
+User/build/classes/.netbeans_automatic_build
+User/build/classes/.netbeans_update_resources
+*.TXT
+User/dist/User.jar
+User/src/app.java
+User/src/Printable.java
+User/src/User.java
