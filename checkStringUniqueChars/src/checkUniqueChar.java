@@ -17,6 +17,7 @@ public class checkUniqueChar {
     public static void main(String[] args) {
         boolean test = checkUnique2("abcdeafg");
         System.out.println(test);
+        
     }
     
     public static boolean checkUnique(String str) {
