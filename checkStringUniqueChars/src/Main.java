@@ -21,7 +21,8 @@ public class Main {
         System.out.println(replaceSpace1);
          */
         
-        
+        String comp = Compress.condense2("aaallleeennnzooopppeees");
+        System.out.println(comp);
         
     }
     
