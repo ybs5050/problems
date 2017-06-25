@@ -8,7 +8,11 @@ for i in range(n):
     for j in range(n):
         matrix[i][j] = count
         count += 1
-matrix[n-1][n-1] = 0
+# matrix[0][0] = 0
+# matrix[n-(n-1)][0] = 0
+# matrix[n-(n-2)][0] = 0
+# matrix[n-(n-3)][0] = 0
+# matrix[n-(n-4)][0] = 0
 for i in matrix:
     print(i)
 
