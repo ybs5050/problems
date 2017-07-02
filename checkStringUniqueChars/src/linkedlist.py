@@ -1,33 +1,27 @@
 import sys
 
-class Node(object):
-
+class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
-    def hasNext(self):
-        return self.next is not None
-
-class LinkedList(object):
-
+class LinkedList:
+    head = Node(None)
     def __init__(self):
         self.head = None
+
     def add(self, data):
         node = Node(data)
         if(self.head is None):
             self.head = node
-
         else:
             node.next = self.head
             self.head = node
 
-
     def prints(self):
         a = self.head
-        while(a.data):
-            sys.stdout.write(str(a.data) + ",")
+        while(a):
+            print(a.data)
             a = a.next
-        print("")
 def main():
     a = LinkedList()
     a.add(5)
