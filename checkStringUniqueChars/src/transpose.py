@@ -19,7 +19,7 @@ print("----------------------")
 
 # number of levels = (n-1)/2
 while (level < total/2):
-    for i in range(level, last):
+    for i in range(level,last):
 
         #swap top left and top right
         matrix[level][i], matrix[i][last] = matrix[i][last], matrix[level][i]
@@ -31,3 +31,6 @@ while (level < total/2):
 
     level+=1
     last-=1
+
+for i in matrix:
+    print(i)
