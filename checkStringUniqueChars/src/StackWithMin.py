@@ -1,5 +1,5 @@
 class Node:
-    
+
     def __init__(self, data, min):
         self.data = data
         self.next = None
@@ -9,7 +9,7 @@ class StackWithMin:
 
     # Each node will have its respective min value
     # For example, [3,4] min = 3, [2,3,4] min = 2
-    # But node(3)'s min is still 3, and node(4)'s min is sitll 4
+    # But node(3)'s min is still 3, and node(4)'s min is still 4
 
     def __init__(self):
         self.stack = []
